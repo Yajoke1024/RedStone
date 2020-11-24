@@ -1,0 +1,64 @@
+.uu {
+  width: 600px;
+  height: 500px;
+  position: absoulte;
+  margin: auto;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.box1 {
+  width: 300px;
+  height: 30px;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 100px;
+  padding-top: 70px;
+}
+.yy {
+  width: 600px;
+  height: 50px;
+  margin-top: 0;
+  position: relative;
+  padding-left: 100px;
+}
+.ww {
+  width: 600px;
+  height: 30px;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 100px;
+}
+.box2 {
+  margin-left: 100px;
+}
+a {
+  text-decoration: none;
+}
+.ll {
+  width: 120px;
+  height: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.nn {
+  margin-top: 10px;
+}
+.qq {
+  display: block;
+  height: 20px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 118px;
+}
+.hh {
+  border: 1px solid #ccc;
+}
+.ui {
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.ii {
+  margin-left: 300px;
+}

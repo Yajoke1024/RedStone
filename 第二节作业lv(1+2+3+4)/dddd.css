@@ -1,0 +1,157 @@
+#tt {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 10px;
+  justify-content: space-around;
+  background-color: mediumpurple;
+  align-items: center;
+  height: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.gg {
+  height: 25px !important;
+  width: auto;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255) !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  border: solid black;
+}
+#tt input {
+  font-size: 20px;
+  margin-top: 0;
+  align-content: 0;
+  height: 50px;
+  background-color: mediumpurple;
+  border: none;
+}
+.hh {
+  margin-top: 200px;
+  display: block;
+  font-size: 20px;
+  color: cornflowerblue;
+  margin-left: 200px;
+}
+.box1 {
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  background-color: floralwhite;
+  margin-left: 200px;
+  margin-top: 50px;
+  flex-flow: column nowrap;
+}
+.box2 {
+  display: flex;
+  font-size: 20px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-weight: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.box3 {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-top: 0;
+  width: 300px;
+  margin-left: 30px;
+}
+.box35 {
+  display: flex;
+  flex-flow: row nowarp;
+  height: 100%;
+  padding-bottom: 10px;
+}
+.box5 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.title1 {
+  font-weight: 20px !important;
+  font-size: 18px;
+}
+p {
+  font-size: 15px;
+}
+.block1 {
+  margin-left: 50px;
+}
+.box5 div {
+  margin-right: 50px;
+}
+.review1 {
+  margin-top: 100px;
+  margin-left: 200px;
+  font-size: 20px;
+  color: cornflowerblue;
+}
+.area2 {
+  width: 1000px;
+  margin-left: 200px;
+  height: 400px;
+  background-color: floralwhite;
+}
+.review2 a {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 80px;
+}
+.review2 {
+  display: block;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.window {
+  display: flex;
+  flex-flow: nowrap row;
+}
+.window div {
+  width: 300px;
+  margin-left: 80px;
+}
+.window a {
+  font-size: 15px;
+}
+.window p {
+  font-weight: 20px !important;
+  font-size: 20px;
+}
+.window button {
+  width: 100px;
+  margin-left: 150px;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.area3{
+  width: 1000px;
+  height: 400px;
+  margin-left: 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: floralwhite;
+  margin-top: 30px;
+}
+.boxe{
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: space-around;
+}
+.boxd{
+  width: 310px;
+  margin-left: 20px;
+}
+.bxoe p{
+  font-size: 25px;
+  font-weight: 50px;
+}
+.area3 div{
+  font-size: 15px;
+}

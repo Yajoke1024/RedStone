@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/javascript"></style>
+    <title>红颜作业lv0</title>
+    <script>
+        //以下为lv0内容
+        var tt = 'HelloWorld';
+        console.log(tt);
+        function gg(){
+            sum = 'HelloWorld'
+            console.log(sum);
+        }
+        gg()
+        uu = 'HelloWorld'
+        console.log(uu);
+        var qq = 'Hello';
+        var ww = 'World';
+        console.log(qq + ww);
+        function oo(){
+            console.log(qq + ww);
+        }
+        oo()
+            console.log('HelloWorld');
+            var arr1 = [1,5,6,7,'8',10];
+            var sum = 0
+            
+            function getSum(){
+                for(var i= 0 ; i < arr1.length ; i++){
+                sum +=parseInt(arr1[i]);
+                }
+                return sum 
+            }
+            getSum()
+            console.log(sum);
+        //  以下为lv1内容
+         var str = 'can-enter-volunteer-organzation';   
+         var sum = '';
+         function change(){
+            var arr = str.split('-');
+            for(var i=0 ; i < arr.length ; i++){
+                if(i == 0){
+                    sum += arr[i]
+                }
+                else{
+                    
+                    var newarr = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+                    sum += newarr
+                }
+                return sum
+            }
+        }
+         change()
+         console.log(sum);
+         let arr2 = ["myfirstactivity","today activity","yourActivity","activitys"]
+         function yy(){
+                arr2.push('acitivity')
+         }
+         yy()
+         console.log(arr2);
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>
