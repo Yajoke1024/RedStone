@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lv3</title>
+</head>
+<body><ol id="list">
+    <li>很快哈，一个左正蹬，一个右踢腿，一个左刺拳</li>
+    <li>我大E了没有闪</li>
+    <li>年轻人不讲武德</li>
+    <li>我劝这位年轻人耗子尾汁</li>
+    </ol>
+    <script>
+        let lis = document.querySelectorAll('li')
+        document.querySelector('#list').addEventListener('click',function(){
+            for(var i=0;i<lis.length;i++){
+               if(i %2!=0){
+                   lis[i].style.backgroundColor="green";
+               }else{
+                   lis[i].style.backgroundColor='red';
+               }
+               
+            }   
+        })//太好了，DOM和BOM真的比js要有意思多了，前端牛逼！！！
+        /*  let ol =lis[i];
+        console.log(ol)*/
+        document.querySelector("#list").addEventListener('click', function(e){
+            console.log(e.target.innerText);
+    
+        })
+    </script>
+</body>
+</html>

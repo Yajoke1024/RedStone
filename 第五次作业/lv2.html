@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次作业</title>
+    <style>
+        #box{
+            width: 250px;
+            height: 150px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body><div id="box"></div>
+    <p>WDNMD唯独你没懂</p>
+    <button class="button1">点击一下改变字体</button>
+    <button class="button2">点一下改变背景颜色</button>
+    <script>
+       let flag = 1;
+        let text = document.querySelector('p')
+        let button1 = document.querySelector('.button1')
+        let box = document.querySelector('#box')
+        button1.addEventListener('click', function(){
+            if(flag==1){text.style.fontSize= '12px';
+                flag=2;
+
+            }else if(flag==2){text.style.fontSize='20px';
+                flag=3;
+
+            }else{text.style.fontSize= '30px';
+                flag=1;
+            }
+
+        })
+        let button2 = document.querySelector('.button2');
+        let flag2=1;
+        button2.addEventListener('click',function(){
+            if(flag2==1){box.style.backgroundColor='pink';
+                flag2=2;
+            }else if(flag2==2){
+                box.style.backgroundColor='red';
+                flag2=3;
+            }else{
+                box.style.backgroundColor='blue';
+                flag2=1;
+            }
+        })
+
+
+            
+    </script>    
+</body>
+</html>
