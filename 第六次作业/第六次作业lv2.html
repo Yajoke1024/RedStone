@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方法调接口</title>
+  </head>
+  <body>
+    输入你需要的网站：<input type="text" class="text" /><button>
+      点击得到该网站信息
+    </button>
+    <script>
+      let word = document.querySelector("input");
+      let button = document.querySelector("button");
+      let key = word.value;
+      button.addEventListener("click", function () {
+          let box = document.createElement("div");
+          document.body.appendChild(box);
+          pack(word.value);
+          function pack(url) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("get", url, true);
+            xhr.onreadystatechange = () => {
+              if (xhr.readyState === 4) {
+                if (
+                  (xhr.status >= 200 && xhr.status < 300) ||
+                  xhr.status == 304
+                ) {
+                  let data = JSON.parse(xhr.responseText);
+                  console.log("请求成功");
+                  console.log(data);
+                } else {
+                  console.log("请求失败");
+                }
+              }
+            };
+
+            xhr.send();
+            }
+        });
+    </script>
+  </body>
+</html>

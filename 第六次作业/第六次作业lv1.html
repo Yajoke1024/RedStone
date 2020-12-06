@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>阿哲</title>
+    <style>
+      .main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" style="height: 20px; width: 200px" />
+    <button>点击搜索一下</button>
+    <div class="main">
+      <div class="box1"><ul class="ul1"></ul></div>
+      <div class="box2"><ul class="ul2"></ul></div>
+      <div class="box3"><ul class="ul3"></ul></div>
+    </div>
+    <script>
+      let button = document.querySelector("button");
+      let text = document.querySelector("text");
+      let main = document.querySelector(".main");
+      let ul1 = document.querySelector(".ul1");
+      let ul2 = document.querySelector(".ul2");
+      let ul3 = document.querySelector(".ul3");
+
+      const xhr = new XMLHttpRequest();
+      button.addEventListener("click", function () {
+        let word = document.querySelector("input");
+        let key = word.value;
+        xhr.open(
+          "get",
+          `http://musicapi.leanapp.cn/search?keywords=${key}`,
+          true
+        );
+        xhr.onreadystatechange = () => {
+          console.log("hhh");
+          if (xhr.readyState === 4) {
+            ul1.innerHTML = null;
+            ul2.innerHTML = null;
+            ul3.innerHTML = null;
+            let data = JSON.parse(xhr.responseText);
+            console.log(data);
+            data.result.songs.forEach((element) => {
+              let li = document.createElement("li");
+              li.innerText = `歌名:${element.name}`;
+              ul1.appendChild(li);
+            });
+            data.result.songs.forEach((element2) => {
+              let li = document.createElement("li");
+              li.innerText = `歌手:${element2.artists[0].name}`;
+              ul2.appendChild(li);
+            });
+            data.result.songs.forEach((element3) => {
+              let li = document.createElement("li");
+              li.innerText = `专辑:${element3.album.name}`;
+              ul3.appendChild(li);
+            });
+          }
+        };
+        xhr.send();
+      });
+    </script>
+  </body>
+</html>
